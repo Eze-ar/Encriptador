@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/reset.css">
+    <!--reset de estilos, para independizar de los estilos que ponga el browser -->
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            ENCRIPTADOR
+        </h1>
+    </header>
+    <main>
+        <section>
+            <div class="cajaTexto">
+                <p><label for="ingreso">Texto a encriptar/desencriptar <span>(en minúsculas y sin acentos)</span>:</label></p>
+                <textarea id="ingreso" name="ingreso" placeholder="Escriba aquí..."></textarea>
+                <!--podría definir acá el tamaño con: rows="10" cols="40" pero lo haré en el CSS-->
+            </div>
+            <div class="cajaTexto">
+                <p><label for="resultado">Texto encriptado/desencriptado:</label></p>
+                <textarea readonly id="resultado" name="resultado" placeholder="El resultado aparecerá aquí..."></textarea>
+                <!--caja de texto de solo lectura-->
+                <!--podría definir acá el tamaño con: rows="10" cols="40" pero lo haré en el CSS-->
+            </div>
+            <div class="botones">
+                <input type="button" value="Encriptar" onclick="encriptar();" />
+                <input type="button" value="Desencriptar" onclick="desencriptar();" />
+                <input type="button" value="Copiar" onclick="copiar();" />
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Resolución del Challenge #01: <span>Adrián Eze Angió</span></p>
+        <p>Agradecimientos: <span>Alura Latam & Oracle ONE !!!</span></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

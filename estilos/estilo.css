@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+/*uso una fuente de Google Fonts*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../imagenes/matrix.jpg");
+    background-position: center;
+    /* imagen centrada */
+    background-repeat: repeat;
+    /* no repite la imagen */
+    background-size: cover;
+    /* para que la imagen de fondo cubra el contenedor*/
+    min-height: 100%;
+}
+
+h1 {
+    font-family: 'Audiowide', cursive;
+    color: rgb(216, 49, 49);
+    text-align: center;
+    margin-top: 2em;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 2px 2px 3px lightgoldenrodyellow;
+    font-weight: bolder;
+    font-size: 250%;
+}
+
+section {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cajaTexto {
+    display: inline-block;
+    margin-top: 5rem;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 10px;
+    color: blanchedalmond;
+    text-shadow: 2px 2px 3px black;
+    /*sombra para aumentar la legibilidad del texto*/
+    font-weight: bolder;
+}
+
+.cajaTexto p {
+    font-size: 95%;
+}
+
+.cajaTexto span {
+    font-weight: lighter;
+}
+
+.cajaTexto textarea {
+    margin-top: 0.5em;
+    padding: 5px;
+    border-radius: 10px;
+    color: rgb(33, 7, 105);
+    font-size: 130%;
+    font-weight: bold;
+    height: 12em;
+    /*dimensiones del textarea en vez de ponerlo en el HTML*/
+    width: 25em;
+    /*dimensiones del textarea en vez de ponerlo en el HTML*/
+}
+
+::placeholder {
+    color:darkgray;
+}
+
+.botones {
+    width: auto;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.botones input {
+    background-color: rgb(151, 28, 28);
+    border: 2px;
+    color: lightgray;
+    padding: 0.5em 0.5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+    font-weight: bold;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    /*tiempo de transición del mouse hover*/
+    box-shadow: 0 2px 4px 0 rgb(182, 182, 143), 0 1px 5px 0 rgb(182, 182, 143);
+    /*efecto de sombra a los botones*/
+}
+
+.botones input:hover {
+    /*al pasar el mouse por encima de los botones cambia a estos estilos*/
+    background-color: rgb(216, 49, 49);
+    box-shadow: 0 4px 8px 0 lightgoldenrodyellow, 0 3px 8px 0 lightgoldenrodyellow;
+    /*efecto de sombra al botón por el que el mouse pasa por encima que hace que parezca encendido*/
+    color: white;
+}
+
+footer {
+    position: fixed;
+    /*posición fija y*/
+    bottom: 0;
+    /*a 0px desde el final de página*/
+    font-size: 80%;
+    color: blanchedalmond;
+    background: black;
+    height: 4em;
+    padding-top: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    margin: 0.3em;
+}
+
+footer p span {
+    font-weight: bold;
+    font-size: 100%;
+}
